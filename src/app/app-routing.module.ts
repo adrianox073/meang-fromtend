@@ -1,3 +1,5 @@
+import { UsersComponent } from './@admin/pages/users/users.component';
+import { DashboardComponent } from './@admin/pages/dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ContactComponent } from './@public/pages/contact/contact.component';
@@ -19,6 +21,8 @@ const routes: Routes = [
 
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'admin', component: DashboardComponent },
+  { path: 'admin/users', component: UsersComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
 ];
 
